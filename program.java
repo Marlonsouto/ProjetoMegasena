@@ -39,17 +39,17 @@ public class program {
                 scan.nextLine();
             }
         }
-        System.out.print("Seus numeros: "+ numerosEscolhidos(vetorNumero));
+        //System.out.print("Seus numeros: "+ numerosEscolhidos(vetorNumero));
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 7; i++) {
             numerosSorteados.add(geradorSorteio.nextInt(100));
         }
 
         System.out.println();
-        for(int i : numerosSorteados ) {
+
             System.out.print("Numeros sorteados:" + numerosSorteados);
-        }
-        System.out.println("acertos: " + imprimirAcertos(vetorNumero, numerosSorteados));
+
+        System.out.println("\nacertos: " + imprimirAcertos(vetorNumero, numerosSorteados));
 
 
     }
